@@ -42,5 +42,3 @@ btn.addEventListener("click", function () {
 span.addEventListener("click", function () {
   modal.style.display = "none";
 });
-
-console.log("aksh");
