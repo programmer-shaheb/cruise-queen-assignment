@@ -31,14 +31,19 @@ function getInputValue(category) {
   return numberOfTickets;
 }
 
-var modal = document.getElementById("myModal");
-var btn = document.querySelector(".btn-style");
-var span = document.querySelector(".close");
+const modal = document.getElementById("myModal");
+const btn = document.querySelector(".btn-style");
+const close = document.querySelector(".close");
 
 btn.addEventListener("click", function () {
   modal.style.display = "block";
 });
 
-span.addEventListener("click", function () {
+close.addEventListener("click", function () {
   modal.style.display = "none";
+  document.getElementById("sub-total").innerText = 0;
+  document.getElementById("vat").innerText = 0;
+  document.getElementById("total").innerText = 0;
+  document.getElementById("first-class").value = 0;
+  document.getElementById("economy-class").value = 0;
 });
